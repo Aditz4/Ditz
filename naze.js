@@ -24,9 +24,9 @@ const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© Naze\nYoutube/Sc :\nhttps://youtube.com/c/Nazedev')  //ubah di config biar ngk emror
-const ini_mark = `0@s.whatsapp.net`
-const ownernya = ownernomer + '@s.whatsapp.net'
+const nyoutube = ('Ditz© ')  //ubah di config biar ngk emror
+const ini_mark = `Ditz@s.whatsapp.net`
+const ownernya = ownernomer + 'Dits@s.whatsapp.net'
 
 //TIME
 const time2 = moment().tz('Asia/Jakarta').format('HH:mm:ss')  
@@ -172,11 +172,11 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
         }
         
         // Public & Self
-        if (!naze.public) {
+        if (!Dit.public) {
             if (!m.key.fromMe) return
         }
         if (m.message) {
-            naze.readMessages([m.key])
+            Ditz.readMessages([m.key])
         }
 
 	// reset limit every 12 hours
